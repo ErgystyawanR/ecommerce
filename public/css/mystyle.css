@@ -1,0 +1,21 @@
+.paid-stamp {
+  width: 200px; /* Default width for desktop */
+  height: 200px; /* Default height for desktop */
+  background-image: url('/img/paid_stamp.png'); /* Replace 'paid_stamp.png' with your image file name */
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  right: 600px;
+  z-index: 10;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .paid-stamp {
+    width: 100px; /* Adjust width for mobile */
+    height: 100px; /* Adjust height for mobile */
+    top: 10px; /* Adjust top position for mobile */
+    right: 100px; /* Adjust right position for mobile */
+  }
+}
